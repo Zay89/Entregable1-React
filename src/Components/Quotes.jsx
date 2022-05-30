@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 const Quotes = ({quotesRandom, colorsRandom, clickButton}) => {
 
@@ -20,7 +21,10 @@ const Quotes = ({quotesRandom, colorsRandom, clickButton}) => {
               {quotesRandom.author}
             </p>
         </div>
-        <button style={styleButton} className='button' onClick={clickButton}>&#62;</button>
+        <Button
+          styleButton={styleButton}
+          clickButton={clickButton}
+        />
       </div>
     </div>
   )
