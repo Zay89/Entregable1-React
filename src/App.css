@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+}
+
+.App {
+  min-height: 100vh;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  margin: 0;
+}
+
+.general {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 0;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px black;
+  padding: 20px;
+  width: min(400px, 100%);
+  border-radius: 15px;
+  position: relative;
+
+  display: flex;
+  /*justify-content: center;*/
+  flex-direction: column;
+}
+
+.quote {
+  font-size: 20px;
+}
+
+.author {
+text-align: end;
+}
+
+.button {
+  display: block;
+  font-size: 22px;
+  width: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  position: relative;
+  left: 100%;
+  transform: translateX(-100%);
+  cursor: pointer;
+  box-shadow: 1px, 1px, 5px 0 #000a;
+  transition: box-shadow 200ms ease;
+}
+
+.button:active {
+  box-shadow: 0 0 0 0 #000a;
+  transition: box-shadow 200ms ease;
+}
